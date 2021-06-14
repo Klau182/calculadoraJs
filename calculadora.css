@@ -12,3 +12,33 @@ body {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(128px, auto) repeat(5, 100px);
 }
+
+.calculadora-grilla > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(79, 133, 233);
+    outline: none;
+    background-color: rgb(250, 204, 239);
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(14, 19, 3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .display {
+    color: rgb(16, 22, 5);
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculadora-grilla > button:hover {
+    background-color: rgb(215, 247, 151);
+}
